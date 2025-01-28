@@ -29,57 +29,59 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            buttonInverter = new Button();
-            label1TipoN1 = new Label();
-            labelTipoN2 = new Label();
-            textBoxValor1 = new TextBox();
-            textBoxValor2 = new TextBox();
+            buttonInvert = new Button();
+            labelTypeN1 = new Label();
+            labelTypeN2 = new Label();
+            textBoxValue1 = new TextBox();
+            textBoxValue2 = new TextBox();
             SuspendLayout();
             // 
-            // buttonInverter
+            // buttonInvert
             // 
-            buttonInverter.Location = new Point(154, 110);
-            buttonInverter.Name = "buttonInverter";
-            buttonInverter.Size = new Size(75, 23);
-            buttonInverter.TabIndex = 0;
-            buttonInverter.Text = "Inverter";
-            buttonInverter.UseVisualStyleBackColor = true;
+            buttonInvert.Location = new Point(154, 110);
+            buttonInvert.Name = "buttonInvert";
+            buttonInvert.Size = new Size(75, 23);
+            buttonInvert.TabIndex = 0;
+            buttonInvert.Text = "Inverter";
+            buttonInvert.UseVisualStyleBackColor = true;
+            buttonInvert.Click += buttonInvert_Click;
             // 
-            // label1TipoN1
+            // labelTypeN1
             // 
-            label1TipoN1.AutoSize = true;
-            label1TipoN1.BorderStyle = BorderStyle.Fixed3D;
-            label1TipoN1.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1TipoN1.Location = new Point(76, 112);
-            label1TipoN1.Name = "label1TipoN1";
-            label1TipoN1.Size = new Size(59, 22);
-            label1TipoN1.TabIndex = 1;
-            label1TipoN1.Text = "Arábico";
+            labelTypeN1.AutoSize = true;
+            labelTypeN1.BorderStyle = BorderStyle.Fixed3D;
+            labelTypeN1.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelTypeN1.Location = new Point(76, 112);
+            labelTypeN1.Name = "labelTypeN1";
+            labelTypeN1.Size = new Size(59, 22);
+            labelTypeN1.TabIndex = 1;
+            labelTypeN1.Text = "Arábico";
             // 
-            // labelTipoN2
+            // labelTypeN2
             // 
-            labelTipoN2.AutoSize = true;
-            labelTipoN2.BorderStyle = BorderStyle.Fixed3D;
-            labelTipoN2.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelTipoN2.Location = new Point(252, 110);
-            labelTipoN2.Name = "labelTipoN2";
-            labelTipoN2.Size = new Size(63, 22);
-            labelTipoN2.TabIndex = 2;
-            labelTipoN2.Text = "Romano";
+            labelTypeN2.AutoSize = true;
+            labelTypeN2.BorderStyle = BorderStyle.Fixed3D;
+            labelTypeN2.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelTypeN2.Location = new Point(252, 110);
+            labelTypeN2.Name = "labelTypeN2";
+            labelTypeN2.Size = new Size(63, 22);
+            labelTypeN2.TabIndex = 2;
+            labelTypeN2.Text = "Romano";
             // 
-            // textBoxValor1
+            // textBoxValue1
             // 
-            textBoxValor1.Location = new Point(76, 153);
-            textBoxValor1.Name = "textBoxValor1";
-            textBoxValor1.Size = new Size(100, 23);
-            textBoxValor1.TabIndex = 3;
+            textBoxValue1.Location = new Point(76, 153);
+            textBoxValue1.Name = "textBoxValue1";
+            textBoxValue1.Size = new Size(100, 23);
+            textBoxValue1.TabIndex = 3;
+            textBoxValue1.TextChanged += textBoxValue1_TextChanged;
             // 
-            // textBoxValor2
+            // textBoxValue2
             // 
-            textBoxValor2.Location = new Point(215, 153);
-            textBoxValor2.Name = "textBoxValor2";
-            textBoxValor2.Size = new Size(100, 23);
-            textBoxValor2.TabIndex = 4;
+            textBoxValue2.Location = new Point(215, 153);
+            textBoxValue2.Name = "textBoxValue2";
+            textBoxValue2.Size = new Size(100, 23);
+            textBoxValue2.TabIndex = 4;
             // 
             // Form1
             // 
@@ -88,11 +90,11 @@
             BackgroundImage = Properties.Resources.pilastra_romana;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(384, 341);
-            Controls.Add(textBoxValor2);
-            Controls.Add(textBoxValor1);
-            Controls.Add(labelTipoN2);
-            Controls.Add(label1TipoN1);
-            Controls.Add(buttonInverter);
+            Controls.Add(textBoxValue2);
+            Controls.Add(textBoxValue1);
+            Controls.Add(labelTypeN2);
+            Controls.Add(labelTypeN1);
+            Controls.Add(buttonInvert);
             DoubleBuffered = true;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
@@ -104,10 +106,10 @@
 
         #endregion
 
-        private Button buttonInverter;
-        private Label label1TipoN1;
-        private Label labelTipoN2;
-        private TextBox textBoxValor1;
-        private TextBox textBoxValor2;
+        private Button buttonInvert;
+        private Label labelTypeN1;
+        private Label labelTypeN2;
+        private TextBox textBoxValue1;
+        private TextBox textBoxValue2;
     }
 }
