@@ -72,15 +72,15 @@
             // 
             textBoxValue1.Location = new Point(76, 153);
             textBoxValue1.Name = "textBoxValue1";
-            textBoxValue1.Size = new Size(100, 23);
+            textBoxValue1.Size = new Size(115, 23);
             textBoxValue1.TabIndex = 3;
             textBoxValue1.TextChanged += textBoxValue1_TextChanged;
             // 
             // textBoxValue2
             // 
-            textBoxValue2.Location = new Point(215, 153);
+            textBoxValue2.Location = new Point(200, 153);
             textBoxValue2.Name = "textBoxValue2";
-            textBoxValue2.Size = new Size(100, 23);
+            textBoxValue2.Size = new Size(115, 23);
             textBoxValue2.TabIndex = 4;
             // 
             // Form1
